@@ -2,7 +2,7 @@
 layout: post
 title: 깃허브 페이지 세팅법
 date: 2022-02-11
-category: Git
+category: Gittttt
 ---
 
 프론트엔드관련 지식이 전무하고 해본적도 없는 입장으로서 깃허브페이지는 만드는 과정부터 난관이었습니다.
