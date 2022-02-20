@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML 표(table) 만들기
-date: 2022-02-21
+date: 2022-02-21 00:00:00+0900
 category: Web
 published: true
 ---
