@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML 이미지 삽입하기
-date: 2022-02-21
+date: 2022-02-20
 category: Web
 published: true
 ---
