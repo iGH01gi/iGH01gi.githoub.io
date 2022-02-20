@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 깃페이지 포스트가 반영이 안될때
-date: 2022-02-21 09:01:00+0900
+date: 2022-02-21
 category: Git
 published: true
 ---
