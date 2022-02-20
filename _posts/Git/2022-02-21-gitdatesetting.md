@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 깃페이지 포스트가 반영이 안될때
-date: 2022-02-21
+date: 2022-02-21 00:00:00+0900
 category: Git
 published: true
 ---
@@ -40,7 +40,7 @@ published: true
 <br>  
 
 
-# 2. 포스트의 date항목 설정 오류  
+# 2. timezone 미설정으로 인한 문제
 포스트의 머릿말을 쓸 때 나는 date를 
 >date:2022-02-21
 
@@ -49,9 +49,10 @@ published: true
 미래 시간을 판별할 때 Jekyll은 내부적으로 UTC+0000을 기준으로 삼고 있고  
 시간대 정보가 없는 date 값은 암묵적으로 UTC+0000 시간대로 판단하는 것으로 추정된다.  
 **즉, 나는 한국에서 시간대 정보없이 글을 썼기 때문에 미래 시간으로 인식이 되어, 포스트가 반영이 안됐던 것이다.**  
-결론적으로 한국은 표준시간대보다 9시간이 빠른 UTC+0900을 사용하기 때문에 date를 쓸때 00:00:00+0900 를 추가해줘야한다.  
+이를 해결하기 위해 **_config.yml**에서 timezone: Asia/Seoul 을 추가해 준 후  
+한국은 표준시간대보다 9시간이 빠른 UTC+0900을 사용하기 때문에 date를 쓸때 00:00:00+0900 를 추가해줘야한다.  
 
-#### 결론2 : 머릿말 date에 00:00:00+0900을 추가하자.
+#### 결론2 : _config.yml에서 timezone: Asia/Seoul추가하기 + 머릿말 date에 00:00:00+0900을 추가하자.
 >
 ㅡㅡㅡ  
 layout: post  
@@ -60,3 +61,5 @@ date: 2022-02-21 00:00:00+0900
 category: Git  
 published: true  
 ㅡㅡㅡ
++
+_config.yml에서 timezone: Asia/Seoul추가하기.
