@@ -90,3 +90,102 @@ HTML5에서는 용도에 맞게 입력할 수 있는 텍스트 필드를 다양�
 ```
 >**라디오 버튼과 name 속성**  
 간혹 HTML 소스 코드를 보면 라디오 버튼에 name속성이 포함된 것을 볼 수 있다. name 속성은 PHP와 같은 웹 프로그래밍에서 폼 요소를 제어할 때 자주 사용함. 라디오 버튼에서 하나의 버튼만 선택할 수 있게 하려면 다음과 같이 모든 라디오 버튼의 name값을 똑같이 지정해야 함.  
+
+
+
+# 숫자 입력 필드를 나타내는 type="number", type="range"
+텍스트 필드에서 사용자가 숫자를 직접 입력할 수도 있지만 **type="number"**를 사용하면 스핀박스가 나타나서 숫자를 선택할 수 있다.  
+**type="range"**는 슬라이드 막대를 움직여 숫자를 입력할 수 있다.  
+```html
+<input type="number">
+<input type="range">
+```  
+**type="number" , type="range" 필드에서 사용할 수 있는 속성은 다음과 같다.**  
+>**min** : 필드에 입력할 수 있는 최솟값을 지정함. 기본 최솟값은 0  
+**max** : 필드에 입력할 수 있는 최댓값을 지정함. 기본 최댓값은 100  
+**step** : 숫자 간격을 지정할 수 있다. 기본값은 1  
+**value** : 필드에 표시할 초깃값  
+
+# 날짜 입력을 나타내는 type="date" ,type="month", type="week"
+```html
+<input type="date | month | week">  
+// '|'기호는 나열한 옵션 중 하나가 속성값이 되어야 한다는 뜻.
+```
+>- **type="date"** : 달력에서 날짜를 선택해서 입력할 수 있음. 날짜를 선택하면 필드에 "yyyy-mm-dd"형식으로 연도,월,일이 표시됨.  
+- **type="month"** : 달력에서 월을 선택해서 입력할 수 있음. 월을 선택하면 "yyyy-mm"형식으로 연도,월까지만 입력됨.  
+- **type="week"** : 달력에서 주를 선택해서 입력할 수 있음. 주를 선택하면 1월 첫째 주를 기준으로 몇 번째 주인지 표시됨.
+
+
+# 시간 입력을 나타내는 type="time" ,type="datetime", type="datetime-local"
+시간을 지정할 때는 **type="time"**을 사용하고 날짜와 시간을 함께 지정하려면 **type="datetime"**이나 **type="datetime-local"**을 사용함.  
+```html
+<input type="time | datetime | datetime-local">
+```
+> - **type="time"**은 폼에서 시간을 입력하게 함. 시간 입력 필드는 웹 브라우저마다 조금씩 다르게 나타나는데 항목이 3개로 구성된다는 점은 같음.  
+첫 번째 항목부터 '오전'과 '오후'를 의미하고 나머지는 '시'와 '분'을 의미함.
+- **type="datetime"** 또는 **type="datetime-local"**유형을 사용하면 사용자가 웹 문서를 보고 있는 지역에 맞는 날짜와 시간을 함께 입력할 수 있다.  
+
+**날짜, 시간의 범위를 지정하는 속성**
+>
+**min**,**max** : 날짜나 시간의 범위를 제한할 때 사용함. min속성은 범위의 시작 날짜나 시간을, max 속성은 범위의 마지막 날짜나 시간을 지정.  
+**step** : 스핀 박스의 화살표를 클릭했을 때 증감시킬 크기를 지정.  
+**value** : 기본적으로 표시할 날짜나 시간을 지정함.   
+```html
+<input type="date" min="2020-02-01" max="2020-02-15"> //사용예시
+```
+![범위제한](\images\html\datelimit.png)
+
+# 전송,리셋 버튼을 나타내는 type="submit", type="reset" 
+submit은 폼에 입력한 정보를 서버로 전송함.  
+submit 버튼으로 전송된 정보는 ＜form＞태그의 action속성에서 지정한 폼 처리 프로그램에 넘겨짐.  
+반면에 reset 버튼은 ＜input＞요소에 입력된 모든 정보를 재설정해서 사용자가 입력한 내용을 모두 지우는 역할을 함.  
+이때 value속성을 사용해서 버튼에 표시할 내용을 지정함.  
+```html
+<input type="submit | reset" value="버튼에 표시할내용">
+```
+
+# 이미지 버튼을 나타내는 type="image" (submit 버튼과 같은 기능)
+submit과 같은 기능을 하지만 이미지인 버튼임.  
+```html
+<input type="image" src="이미지 경로" alt="대체 텍스트">
+```
+
+# 기본 버튼을 나타내는 type="button"
+type="button"은 submit이나 reset버튼과 같은 기능이 없고 오직 버튼형태만 삽입함.  
+주로 버튼을 클릭해서 자바스크립트를 실행할 때 사용함.  
+다음과 같이 value 속성을 사용해 버튼에 표시할 내용을 지정함.  
+```html
+<input type="button" value="버튼에 표시할 내용">
+
+<input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+//이렇게 하면 버튼을 눌렀을때 자바스크립트의 window.open()함수를 실행함.
+```
+# 파일 첨부할 때 사용하는 type="file"
+폼에서 사진이나 문서를 첨부해야 할때 사용.  
+type="file"유형을 사용하면 웹 브라우저 화면에 [파일 선택]이나 [찾아보기]버튼 등이 표시되는데,  
+이 버튼을 클릭하고 파일을 선택하면 파일이 첨부됨.  
+```html
+<input type="file">
+//첨부한 파일을 서버로 보내려면 자바스크립트 등 웹 프로그래밍 언어를 사용해야 함.
+여기에서는 파일 첨부 버튼을 만드는 것만 함.  
+```
+ 
+# 히든 필드 만들 때 사용하는 type="hidden"
+화면의 폼에는 보이지 않지만 사용자가 입력을 마치면 폼과 함께 서버로 전송되는 요소임.  
+사용자에게 굳이 보여 줄 필요는 없지만 관리자는 알아야 하는 정보를 히든필드로 입력함.  
+```html
+<input type="hidden" name="이름" value="서버로 넘길 값">
+```  
+
+아래는 히든 필드를 사용해 사용자가 사이트에서 로그인하는 정보를 서버로 넘겨주는 예시.  
+로그인 버튼을 누르면 입력한 정보와 함께 히든 필드의 내용이 서버로 함께 전송됨.  
+```html
+<form>
+    <fieldset>
+      <input type="hidden" name="url" id="url" value="사이트를 통한 직접 로그인">
+    	<label>아이디: <input type="text" id="user_id" size="10"></label>
+      <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+      <input type="submit" value="로그인">
+    </fieldset>
+</form>
+```
