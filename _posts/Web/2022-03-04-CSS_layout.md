@@ -40,14 +40,20 @@ float속성은 웹 요소를 문서 위에 떠 있게 함. 여기서 '떠 있다
       margin-right:40px;
     }
     body{
-        background-color:black
+        background-color:gray;
     }
   </style>
 </head>
 <body>
   <img src="images/tree.png">
-   <p>Ex et adipisicing voluptate aliqua cupidatat nulla. Laboris est sint sit aliqua enim. Aute Lorem eu sint aute sunt proident. Do culpa consectetur elit duis laboris reprehenderit incididunt nulla. Irure exercitation tempor aliqua laboris cupidatat anim in non officia aliquip excepteur fugiat labore.</p>
-   <p>Lorem ipsum reprehenderit adipisicing exercitation enim velit veniam incididunt sit consectetur elit exercitation. Commodo veniam sit quis nisi ea. Ipsum do aliqua nostrud laboris elit duis adipisicing id Lorem qui. Labore dolor ipsum enim incididunt. Velit qui cillum sunt labore incididunt duis aute Lorem nulla et. Sint commodo aute amet laboris ullamco exercitation Lorem dolore veniam ut reprehenderit incididunt. Laborum nulla eiusmod cillum irure anim aute.</p>
+   <p>Ex et adipisicing voluptate aliqua cupidatat nulla. Laboris est sint sit aliqua enim. 
+     Aute Lorem eu sint aute sunt proident. Do culpa consectetur elit duis laboris reprehenderit incididunt nulla. 
+     Irure exercitation tempor aliqua laboris cupidatat anim in non officia aliquip excepteur fugiat labore.</p>
+   <p>Lorem ipsum reprehenderit adipisicing exercitation enim velit veniam incididunt sit consectetur elit exercitation. 
+     Commodo veniam sit quis nisi ea. Ipsum do aliqua nostrud laboris elit duis adipisicing id Lorem qui. 
+     Labore dolor ipsum enim incididunt. Velit qui cillum sunt labore incididunt duis aute Lorem nulla et. 
+     Sint commodo aute amet laboris ullamco exercitation Lorem dolore veniam ut reprehenderit incididunt. 
+     Laborum nulla eiusmod cillum irure anim aute.</p>
    <p>Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.</p>
    <p>Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.</p>
    <p>Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.Excepteur volup.</p>
