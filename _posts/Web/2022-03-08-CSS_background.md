@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS 배경관련
-date: 2022-03-07 00:00:00+0900
+date: 2022-03-08 00:00:00+0900
 category: Web
 published: true
 ---
