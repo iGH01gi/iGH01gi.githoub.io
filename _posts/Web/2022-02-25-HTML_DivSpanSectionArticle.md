@@ -24,7 +24,7 @@ published: true
     <h1>HTML의 2번째 이야기</h1>
     <p>웹 문서를 만들때 ~~</p>
     ...
-</article>
+</section>
 ```
 
 # &lt;div&gt; 태그와 &lt;span&gt; 태그
