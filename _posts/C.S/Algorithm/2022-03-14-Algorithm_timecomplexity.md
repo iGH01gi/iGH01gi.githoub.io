@@ -70,3 +70,19 @@ f(x)=θ(g(x))라고 표현할 수 있다.  f(x) is big-theta of g(x)라고 읽�
 
 # 성질
 ![프로퍼티](\images\Algorithm\properties.png)
+
+
+<br>
+- 빅오 표기법의 특징  
+
+계수 법칙: 상수 k>0인 경우 f(n)이 O(g(n))이면 kf(n)은 O(g(n))이다.  
+합의 법칙: f(n)이 O(h(n))이고 g(n)이 O(p(n))이라면 f(n) + g(n)은 O(h(n)+p(n))이다.  
+곱의 법칙: f(n)이 O(h(n))이고 g(n)이 O(p(n))이면 f(n)g(n)은 O(h(n)p(n))이다.  
+전이 법칙: f(n)이 O(g(n))이고 g(n)이 O(h(n))이면 f(n)은 O(h(n))이다.  
+다항법칙: f(n)이 3(k)차 다항식이면 f(n)은 O(n³(k))이다.  
+상수항 무시: 빅오 표기법은 데이터 입력값(n)이 충분히 크다고 가정하고 있고, 알고리즘의 효율성 또한 데이터 입력값(n)의 크기에 따라 영향 받기 때문에 상수항 같은 사소한 부분은 무시한다.  
+*영향력 없는 항 무시: 빅오 표기법은 데이터 입력값(n)의 크기에 따라 영향을 받기 때문에 가장 영향력이 큰 항에 이외에 영향력이 없는 항들은 무시한다.  
+그래프에 나와 있는 시간 복잡도의 성능을 비교하면 다음과 같다.  
+
+[빅오메가 빅세타 차이](https://www.freecodecamp.org/news/big-theta-and-asymptotic-notation-explained/)
+https://cs.stackexchange.com/questions/10763/why-is-theta-notation-suitable-to-insertion-sort-to-describe-its-worst-case-r
