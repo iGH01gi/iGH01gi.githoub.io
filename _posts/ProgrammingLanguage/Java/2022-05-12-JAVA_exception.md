@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 예외 처리
-date: 2022-05-10 00:00:00+0900
+date: 2022-05-12 00:00:00+0900
 category: Java
 published: true
 ---
@@ -76,9 +76,6 @@ public class JavaStudy{
         Animal animal =new Dog();
         Cat cat=(Cat) animal;
     }
-}
-class Animal{
-    //
 }
 class Animal{
     //
