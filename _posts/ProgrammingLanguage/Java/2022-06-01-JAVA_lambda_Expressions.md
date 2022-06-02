@@ -281,7 +281,7 @@ boolean result = predicate.test(sourceObject); //이렇게하면 Objects.equals(
 Objects.equals(sourceObject,targetObject)는 다음과 같은 리턴값을 제공한다.  
 ![and(),or(),negate() 표](\images\java\isequal.png)    
 
-### -mainBy(),maxBy()정적 메소드 
+### -minBy(),maxBy()정적 메소드 
 BinaryOperator\<T\>함수적 인터페이스는 minBy()와 maxBy() 정적 메소드를 제공한다.  
 이 두 메소드는 매개값으로 제공되는 Comparator를 이용해서 최대 T와 최소 T를 얻는 BinaryOperator\<T\>를 리턴한다.  
 ![minBy(),maxBy() 표](\images\java\maniby.png)   
@@ -299,7 +299,7 @@ public interface Comparator<T>{
 메소드 참조는 메소드를 참조해서 매개 변수의 정보 및 리턴 타입을 알아내어, 람다식에서 불필요한 매개 변수를 제거하는 것이 목적이다.  
 람다식은 종종 기존 메소드를 단순히 호출만 하는 경우가 많다.  예를들어  Math클래스의 max()정적 메소드를 호출하는 람다식은 다음과 같다.  
 ```java
-(left,right)->Math.math(left,right); 
+(left,right)->Math.max(left,right); 
 //이 경우 다음과 같이 메소드 참조를 이용하면 깔끔하게 가능  
 Math::max;
 ```  
